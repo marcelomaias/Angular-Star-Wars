@@ -2,15 +2,12 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
-
 import { AppComponent }  from './components/app.component';
-import { HomeComponent }  from './components/home.component';
-import { AboutComponent }  from './components/about.component';
-import { routing } from './app.routes';
+import { PeopleListComponent } from './components/people-list.component';
 
 @NgModule({
-  imports:      [ BrowserModule, HttpModule, routing ],
-  declarations: [ AppComponent, HomeComponent, AboutComponent ],
+  imports:      [ BrowserModule, HttpModule ],
+  declarations: [ AppComponent, PeopleListComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

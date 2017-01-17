@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
-  selector: 'app',
-  templateUrl: '../templates/app.component.html',
-  styleUrls: ['../templates/app.component.css']
+    selector: 'app',
+    template: `
+    <h1>{{title}}</h1>
+    <people-list>
+    `
 })
-export class AppComponent  { }
+export class AppComponent {
+    title: String = 'Star Wars PPlz!!!';
+}
