@@ -1,0 +1,34 @@
+@import "neat-helpers"; // or "neat-helpers" when in Rails
+
+
+$visual-grid: false;
+$visual-grid-color: #AADBF5;
+$visual-grid-index: front;
+$visual-grid-opacity: .2;
+// Change the grid settings
+$column: 100px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 1200px;
+
+$tablet: new-breakpoint(min-width 480px);
+$desktop: new-breakpoint(min-width 768px);
+$wide: new-breakpoint(min-width 992px);
+
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+// Breakpoints
+// $medium:       600px;
+// $large:       1020px;
+// $x-large:     1450px;
+
+// $small-only:  new-breakpoint(max-width $medium - 1                    );
+// $medium-up:   new-breakpoint(min-width $medium                        );
+// $medium-only: new-breakpoint(min-width $medium  max-width $large - 1  );
+// $large-up:    new-breakpoint(min-width $large                         );
+// $large-only:  new-breakpoint(min-width $large   max-width $x-large - 1);
+// $xlarge-up:   new-breakpoint(min-width $x-large                       );

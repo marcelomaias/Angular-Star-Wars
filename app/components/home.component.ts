@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  template: `
-  <h1>Home</h1>
-  <p>Hello {{name}}, this is the home.</p>
-  `,
+  moduleId: module.id,
+  templateUrl: '../templates/home.component.html',
+  styleUrls: ['../templates/home.component.css']
 })
+
 export class HomeComponent  { 
     name = 'Baaa';
 }

@@ -1,0 +1,75 @@
+@import "variables";
+@import "bourbon";
+@import "grid-settings";
+@import "neat";
+@import "fix";
+
+
+/*#######################################################################*/
+/*#######################################################################*/
+/*#######################################################################*/
+
+
+.container, nav {
+  @include outer-container;
+}
+aside {
+  width: 250px;
+  @include media($desktop) {
+    @include span-columns(3);
+  }
+  @include media($wide) {
+    @include span-columns(3);
+  }
+}
+.sidebar #hero {
+  @include media($desktop) {
+    @include span-columns(9);
+  }
+  @include media($wide) {
+    @include span-columns(9);
+  }
+}
+.col {
+  @include span-columns(6);
+}
+
+/*#######################################################################*/
+/*#######################################################################*/
+/*#######################################################################*/
+
+h1 {
+  font-size: $font-size + 20;
+  letter-spacing: -.5px;
+}
+header {
+  background: $orange;
+  padding: 2em 0;
+  a {
+    display: inline-block;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+main {
+  background: darken($white, 5%);
+  padding: 4em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,13 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'app',
-  template: `
-          <nav class="mdl-navigation">
-            <a [routerLink]="['/home']">Home</a>
-            <a [routerLink]="['/about']">About</a>
-          </nav>
-          <router-outlet></router-outlet>
-  `,
+  templateUrl: '../templates/app.component.html',
+  styleUrls: ['../templates/app.component.css']
 })
 export class AppComponent  { }

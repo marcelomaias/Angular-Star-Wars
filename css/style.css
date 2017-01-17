@@ -1,0 +1,211 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*
+ * Fix
+ * Version 0.1.1
+ * https://github.com/jaydenseric/Fix
+*/
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+iframe {
+  border: 0;
+}
+
+main {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  display: block;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+dd {
+  margin-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.2;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+sup {
+  position: relative;
+  top: -.5em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, textarea {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+th {
+  font-weight: 500;
+}
+
+/*#######################################################################*/
+/*#######################################################################*/
+/*#######################################################################*/
+.container, nav {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container::after, nav::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+aside {
+  width: 250px;
+}
+@media screen and (min-width: 768px) {
+  aside {
+    float: left;
+    display: block;
+    margin-right: 1.9607843137%;
+    width: 23.5294117647%;
+  }
+  aside:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  aside {
+    float: left;
+    display: block;
+    margin-right: 1.9607843137%;
+    width: 23.5294117647%;
+  }
+  aside:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar #hero {
+    float: left;
+    display: block;
+    margin-right: 1.9607843137%;
+    width: 74.5098039216%;
+  }
+  .sidebar #hero:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sidebar #hero {
+    float: left;
+    display: block;
+    margin-right: 1.9607843137%;
+    width: 74.5098039216%;
+  }
+  .sidebar #hero:last-child {
+    margin-right: 0;
+  }
+}
+
+.col {
+  float: left;
+  display: block;
+  margin-right: 1.9607843137%;
+  width: 49.0196078431%;
+}
+.col:last-child {
+  margin-right: 0;
+}
+
+/*#######################################################################*/
+/*#######################################################################*/
+/*#######################################################################*/
+h1 {
+  font-size: 36px;
+  letter-spacing: -.5px;
+}
+
+header {
+  background: #FF5722;
+  padding: 2em 0;
+}
+header a {
+  display: inline-block;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+main {
+  background: #f2f2f2;
+  padding: 4em 0;
+}
