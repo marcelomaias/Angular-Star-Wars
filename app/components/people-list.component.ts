@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Person } from './person';
+import { Person } from './../person';
 
 @Component({
   selector: 'people-list',
