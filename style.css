@@ -10,9 +10,16 @@ h1 {
  valid and required show green*/
 .ng-valid[required] {
   border-left: 5px solid #42A948; /* green */
+  padding-left: 5px;
 }
 
  /*invalid*/
 .ng-invalid {
   border-left: 5px solid #a94442; /* red */
+  padding-left: 5px;
+}
+.error{
+  padding: 12px;
+  background-color: rgba(255, 0, 0, 0.2);
+  color: red;
 }
