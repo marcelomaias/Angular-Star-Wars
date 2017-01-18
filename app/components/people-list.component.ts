@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Person } from './../person';
 import { PeopleService } from './../people.service';
 
@@ -7,11 +7,10 @@ import { PeopleService } from './../people.service';
   template: `
   <!-- this is the new syntax for ng-repeat -->
   <ul>
-    <li *ngFor="let person of people" (click)="selectPerson(person)">
-        {{person.name}}
+    <li *ngFor="let person of people">
+      <a href="#" [routerLink]="['/persons', person.id]">{{person.name}}</a>
     </li>
   </ul>
-  <person-details [person]="selectedPerson"></person-details>
   `
 })
 export class PeopleListComponent implements OnInit{
